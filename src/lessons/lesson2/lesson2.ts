@@ -224,6 +224,19 @@ console.log('lesson 2');
 // Task 01
 // Реализовать функцию sum которая суммирует 2 числа следующим образом sum(3)(6) === 9
 
+function sum(a: number) {
+    function sum1(b: number) {
+        function sum2() {
+            return a + b
+        }
+
+        return sum2()
+    }
+
+    return sum1
+}
+
+
 // Task 02
 // Реализовать функцию makeCounter которая работает следующим образом:
 // const counter = makeCounter();
@@ -232,6 +245,16 @@ console.log('lesson 2');
 // const counter2 = makeCounter();
 // counter2(); // 1
 // counter(); // 3
+function makeCounter() {
+    let count = 0;
+
+    function innerFunc() {
+        count += 1;
+        return count;
+    }
+
+    return innerFunc
+}
 
 // Task 03
 // Переписать функцию из Task 02 так, что бы она принимала число в качестве аргумента и это число было стартовым значением счетчика
@@ -250,6 +273,24 @@ console.log('lesson 2');
 // 4) superSum(3)(2,5,3) //10
 // 5) superSum(3)(2,5)(3) //10
 // 6) superSum(3)(2,5)(3,9) //10
+
+function superSum(num: number) {
+    if (num <= 0) return 0;
+    if (num === 1) return (n: number) => n;
+    let _args: number[] = [];
+
+    function helper(...args: number[]) {
+        _args = [..._args, ...args];
+        if (_args.length >= num) {
+            _args.length = num;
+            return _args.reduce((acc, number) => acc + number);
+        } else {
+            return helper;
+        }
+    }
+
+    return helper;
+}
 
 // P.S. типизируйте только аргументы, а при вызове функции используйте @ts-ignore
 
