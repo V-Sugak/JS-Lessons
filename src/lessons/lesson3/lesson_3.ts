@@ -151,10 +151,74 @@ console.log('lesson 3');
 //         console.log(err);
 //     })
 
+// let pr = Promise.resolve(1);
+//
+// pr
+//     .finally( () => {
+//         // console.log('Fin');
+//         // return 50;
+//         throw 100;
+//     })
+//     .then( res => {
+//         console.log(res);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     })
+
+// let a = 10;
+//
+// let pr = Promise.resolve(1);
+//
+// pr
+//     .then( res => {
+//         console.log('res ', res);
+//     })
+//     .catch(err => {
+//         console.log('err ', err);
+//     })
+//
+// console.log(a);
 
 
+let a = 10;
 
+let pr1 = Promise.resolve(0);
+let pr2 = Promise.resolve(1);
+
+setInterval(console.log, 100, 5);
+
+pr1
+    .then(res => {
+        console.log(res);
+        a += 1;
+        return res + 10;
+    })
+    .then(res2 => {
+        console.log(a);
+        console.log(res2);
+        return res2 + 10;
+    })
+    .then(res3 => {
+        console.log(res3);
+    })
+
+pr2
+    .then(ress => {
+        console.log(ress);
+        return ress + 1;
+    })
+    .then(ress2 => {
+        console.log(ress2);
+        return ress2 + 1;
+    })
+    .then(ress3 => {
+        console.log(ress3);
+    })
+
+console.log(a);
 
 
 // just a plug
-export default ()=>{};
+export default () => {
+};
