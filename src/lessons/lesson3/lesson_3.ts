@@ -181,6 +181,7 @@ console.log('lesson 3');
 // console.log(a);
 
 
+/*
 let a = 10;
 
 let pr1 = Promise.resolve(0);
@@ -218,6 +219,30 @@ pr2
 
 console.log(a);
 
+*/
+
+// console.log('Start')
+// async function f() {
+//     try {
+//         console.log('Function Start')
+//         let result = await new Promise((res) => {
+//             setTimeout(res, 1000, 'Done');
+//         })
+//         let result = await new Promise((res) => {
+//             setTimeout(res, 1000, 'Done');
+//         })
+//         let result = await new Promise((res) => {
+//             setTimeout(res, 1000, 'Done');
+//         })
+//         console.log(result)
+//         console.log('Function End')
+//     } catch (e) {
+//
+//     }
+// }
+//
+// f()
+// console.log('End')
 
 // just a plug
 export default () => {
