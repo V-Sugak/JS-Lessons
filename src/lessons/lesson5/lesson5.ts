@@ -219,6 +219,69 @@ console.log('Lesson 5');
 //
 // obj.a = obj2.a();
 
+// let obj = { name: 'Evgen' };
+// let obj2 = {
+//     name: 'Hanna',
+//     a()  {
+//         let bla = 'bla';
+//         console.log('arrow ', this);
+//         let inner = () => {
+//             console.log('Function ', this);
+//             console.log(bla);
+//         }
+//         return inner;
+//     },
+// };
+//
+// obj.a = obj2.a();
+// obj.a();
+
+
+// let obj2 = {
+//     name: 'Hanna',
+//     test() {
+//         setTimeout(function() {
+//             console.log('Function ', this);
+//         }, 100);
+//         setTimeout(() => {
+//             console.log('arrow ', this);
+//         }, 100);
+//     },
+// };
+//
+// obj2.test();
+
+// Call, Apply, Bind
+
+// let obj = { name: 'Evgen'};
+// let obj2 = {
+//     name: 'Hanna',
+//     sayHi() {
+//         console.log(`Hi! My name is ${this.name}`);
+//     }
+// };
+//
+// //obj2.sayHi.bind(obj)()
+// let bindedFunc = obj2.sayHi.bind(obj);
+// bindedFunc()
+
+
+// let obj = { name: 'Evgen'};
+// let obj2 = {
+//     name: 'Hanna',
+//     sayHi( a1:any, a2:any, a3:any) {
+//         console.log(`Hi! My name is ${this.name}. My args are - ${a1},${a2},${a3}`);
+//     }
+// };
+
+// // @ts-ignore
+// obj2.sayHi.bind(obj, 100, 200, 250, 400)(500, 1000);
+// // @ts-ignore
+// obj2.sayHi();
+
+// obj2.sayHi.call(obj, 50, 100, 150);
+// obj2.sayHi.apply(obj, [50, 100, 150]);
+
 
 // Task 01
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
