@@ -282,6 +282,52 @@ console.log('Lesson 5');
 // obj2.sayHi.call(obj, 50, 100, 150);
 // obj2.sayHi.apply(obj, [50, 100, 150]);
 
+// function test(a: any, b: any, c: any) {
+//     console.log(arguments);
+//     console.log([].filter.call(arguments, el => el > 11));
+// }
+//
+// test(5,10,20)
+
+// function test(a, b, c) {
+//     console.log(arguments);
+//     console.log([].filter.call(arguments, el => el > 11));
+// }
+//
+// test(5,10,20)
+
+
+// const constructor = (name, age, city) => {
+//     return {
+//         name, age, city, sayHi() { console.log(this.name)},
+//     };
+// }
+//
+// let obj = constructor('Hanna', 30, 'Minsk');
+// console.log(obj);
+
+
+//console.dir(function() {})
+
+
+// function Test(name, age) {
+//     // this = {}
+//     this.name = name;
+//     this.age = age;
+//
+// }
+// Test.prototype.sayHi = function(){ return this.name};
+// Test.prototype.sayHi = function(){ return this.name};
+// Test.prototype.sayHi = function(){ return this.name};
+// Test.prototype = {
+//     constructor: Test,
+//     admn(){},
+//     mcbvcv(){}
+// };
+//
+// let obj = new Test('Hanna', 20);
+// let obj2 = new Test('Evgen', 35);
+// console.log(obj.sayHi === obj2.sayHi);
 
 // Task 01
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
