@@ -7,6 +7,163 @@ console.log('Lesson 6');
 // https://www.youtube.com/watch?v=BASquaxab_w
 // https://www.youtube.com/watch?v=uLY9GXGMXaA
 
+// function test(name, age) {
+//     return {
+//         name, age,
+//         someFunc(){},
+//     };
+// }
+//
+// let obj = test('Yo', 20);
+// let obj2 = test('Bla', 30);
+//
+// console.log(obj);
+// console.log(obj2);
+
+
+// function Test(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+//
+// let obj = Test('Yo', 20);
+// //let obj2 = test('Bla', 30);
+//
+// console.log(obj);
+// //console.log(obj2);
+
+
+// function Test(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+//
+// let obj = new Test('Yo', 20);
+// //let obj2 = test('Bla', 30);
+//
+// console.log(obj);
+// //console.log(obj2);
+
+// function Test(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     //return 10;
+//     return [10];
+// }
+//
+// let obj = new Test('Yo', 20);
+// //let obj2 = test('Bla', 30);
+//
+// console.log(obj);
+// //console.log(obj2);
+
+//
+// function Test(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     this.someFunc = function () {
+//
+//     }
+// }
+//
+// let obj = new Test('Yo', 20);
+// let obj2 = new Test('Bla', 30);
+//
+// console.log(obj);
+// console.log(obj2);
+
+
+// function Test(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+// Test.prototype.someFunction = function() {};
+//
+// let obj = new Test('Yo', 20);
+// let obj2 = new Test('Bla', 30);
+//
+// console.log(obj);
+// console.log(obj2);
+
+// type TestType = {
+//     name: string,
+//     age: number,
+// }
+//
+// function Test(this: TestType, name: string, age: number) {
+//     this.name = name;
+//     this.age = age;
+// }
+// Test.prototype.someFunction = function() {};
+//
+// //let obj = new Test('Yo', 20);
+// let obj = new (Test as any)('Yo', 20);
+//
+// console.log(obj);
+
+
+// class Test {
+//
+// }
+//
+// let obj = new Test();
+// console.log(obj);
+
+
+// class Test {
+//     name?: string;
+//     age?: number;
+//     //sayYo: Function;
+//     //bindedFunc: Function;
+//
+//     constructor(name?: string, age?: number) {
+//         this.name = name;
+//         this.age = age;
+//         //this.sayYo = function () {};
+//         //this.bindedFunc = this.someFunc.bind(this);
+//     }
+//
+//     someFunc(){};
+//
+//     arrow = () => {
+//     }
+// }
+//
+// // let obj = new Test('Yo', 20);
+// // console.log(obj);
+// //
+// // class Test2 extends Test {
+// //     city: string;
+// //
+// //     constructor(name: string, age: number, city: string) {
+// //         super(name, age);
+// //         this.city = city;
+// //     }
+// // }
+// //
+// // let obj2 = new Test2('Bla', 30, 'Minsk');
+// // console.log(obj2);
+//
+// let obj = new Test('Yo', 20);
+// console.log(obj);
+//
+// class Test2 extends Test {
+//     city: string;
+//
+//     // constructor(name: string ='Monkey', age: number = 50, city: string = 'Minsk') {
+//     //     super(name, age);
+//     //     this.city = city;
+//     // }
+//     // constructor() {
+//     //     super('Yo', 80);
+//     //     this.city = 'sjmfgbhdsfj,mgb';
+//     // }
+// }
+//
+// let obj2 = new Test2();
+// console.log(obj2);
+
+
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
 // Создать массив из десяти элементов такого типа, упорядочить записи по возрастанию среднего балла.
