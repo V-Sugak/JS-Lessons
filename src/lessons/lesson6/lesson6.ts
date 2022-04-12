@@ -163,6 +163,152 @@ console.log('Lesson 6');
 // let obj2 = new Test2();
 // console.log(obj2);
 
+// class Helper {
+//     help1(){}
+//     help2(){}
+// }
+//
+// class SuperHelp extends Helper {
+//     help3(){}
+// }
+//
+// let helpObj = new SuperHelp();
+// console.log(helpObj)
+//
+// class Test extends SuperHelp {
+//     name: string;
+//     age: number;
+//
+//     constructor(name: string, age: number) {
+//         super();
+//         this.name = name;
+//         this.age = age;
+//     }
+//
+//     someFunc(){};
+//     arrow = () => {
+//     }
+// }
+//
+// let objj = new Test('Name', 20);
+// console.log(objj)
+//
+// objj.help1()
+
+
+// class Test {
+//     constructor( public readonly name: string, public age: number ) {
+//     }
+// }
+//
+// let obj = new Test('Name', 20);
+// console.log(obj)
+// obj.name = 'jdfbjsdfjsdf';
+
+
+// class Test {
+//     private count: number = 0;
+//
+//     constructor( ) {}
+//
+//     getCurrentCount() {
+//         return this.count;
+//     }
+//
+//     incrementCount() {
+//         this.count = this.count + 1;
+//     }
+// }
+//
+// let obj = new Test();
+// let obj2 = new Test();
+//
+// obj.incrementCount();
+// obj.incrementCount();
+// obj.incrementCount();
+// obj2.incrementCount();
+// console.log(obj.getCurrentCount())
+// console.log(obj2.getCurrentCount())
+// // @ts-ignore
+// console.log(obj2.count)
+
+// нативная реализация
+// class Test {
+//     #count = 0;
+//
+//     constructor( ) {}
+//
+//     getCurrentCount() {
+//         return this.#count;
+//     }
+//
+//     incrementCount() {
+//         this.#count = this.#count + 1;
+//     }
+// }
+//
+// let obj = new Test();
+//
+// obj.incrementCount();
+// obj.incrementCount();
+// obj.incrementCount();
+// console.log(obj.#count)
+
+
+// class Test {
+//     private count: number = 0;
+//
+//     getCurrentCount() {
+//         return this.count;
+//     }
+//
+//     incrementCount() {
+//         this.count = this.count + 1;
+//     }
+// }
+//
+// class Test2 extends Test {
+//     getCount() {
+//         console.log(this.count);
+//     }
+// }
+//
+// let obj = new Test();
+
+
+// class Test {
+//     protected count: number = 0;
+//
+//     getCurrentCount() {
+//         return this.count;
+//     }
+//
+//     incrementCount() {
+//         this.count = this.count + 1;
+//     }
+// }
+// let obj = new Test();
+// obj.incrementCount();
+// obj.incrementCount();
+// obj.incrementCount();
+// //console.log(obj.getCurrentCount())
+// //console.log(obj.count)
+//
+// class Test2 extends Test {
+//     getCount() {
+//         console.log(this.count * 5);
+//     }
+// }
+//
+// let obj2 = new Test2();
+// obj2.incrementCount();
+// obj2.getCount()
+// obj2.incrementCount();
+// obj2.getCount()
+// obj2.incrementCount();
+// console.log(obj2.getCurrentCount())
+// obj2.getCount()
+
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
