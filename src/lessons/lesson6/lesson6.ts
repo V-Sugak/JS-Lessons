@@ -309,6 +309,90 @@ console.log('Lesson 6');
 // console.log(obj2.getCurrentCount())
 // obj2.getCount()
 
+// class Test {
+//     name: string;
+//     age: number;
+//
+//     constructor(name: string, age: number) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//
+//     someFunc(){
+//         console.log('Hi from Test')
+//     };
+//
+//     arrow = () => {
+//     }
+//
+//     superFunc() {
+//         console.log('111111');
+//     }
+// }
+//
+// class Test2 extends Test {
+//     constructor(name: string, age: number) {
+//         super(name, age);
+//     }
+//
+//     someFunc(){
+//         console.log('Test2 is greeting You!!!!')
+//         super.someFunc();
+//     };
+//
+//     superFunc() {
+//         console.log('0000');
+//     }
+//
+//     // parentSuperFunc() {
+//     //     super.superFunc()
+//     // }
+// }
+//
+// class Test3 extends Test2 {
+//     constructor(name: string, age: number, public city: string) {
+//         super(name, age);
+//     }
+//
+//     superFunc() {
+//         console.log('22222');
+//         super.superFunc();
+//     }
+// }
+//
+// let obj = new Test3('Yo', 525, 'dsfd');
+// console.log(obj);
+// obj.superFunc()
+
+
+interface IPerson {
+    name: string;
+    age: number;
+    city: string;
+    sayYo: Function;
+}
+
+interface IPerson2 {
+    name: string;
+    yyy: Function;
+}
+
+interface IPerson3 extends IPerson2 {
+    jjj: number;
+}
+
+class Test implements IPerson, IPerson3 {
+
+    public jjj = 50
+    constructor(public name: string, public age: number, public city: string) {
+    }
+    someFunc() {}
+    sayYo() {}
+    yyy(){}
+}
+
+let obj = new Test('Name', 10, 'Minsk');
+
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
