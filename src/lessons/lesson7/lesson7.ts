@@ -16,6 +16,8 @@ console.log('Lesson 7');
 
 // https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/Object_prototypes
 
+//learn.javascript 4.4  toString, valueOf
+
 // console.dir(function () {})
 // console.dir(Function)
 // console.dir(Object)
