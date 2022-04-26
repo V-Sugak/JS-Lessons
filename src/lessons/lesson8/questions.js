@@ -199,3 +199,52 @@ function getAvailability(name) {
     return name === 'Eugene';
 }
 console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'));  //undefined
+
+
+// Task 11
+// const entries = [];
+// entries.push('a');
+// entries.push('b', 'c');
+// console.log(entries.pop());             //c
+// console.log(entries.push('L'));         //4
+
+// Task 12
+// const entries = ['a', 1, true];
+// console.log(entries instanceof Array);   //true
+
+// Task 13
+// const priority = new Set(['High', 'Low']);
+// function logSetElements(key, value, set) {
+// 	console.log(`s[${key}] = ${value}`);
+// }
+// priority.forEach(logSetElements);
+//Result:     s[High] = High           s[Low] = Low
+
+
+// Task 14
+// const ids = new Set([1, '1']);
+// console.log(ids.size);     //2
+
+
+// Task 15
+// const entries = ['a', 'b', 'c'];
+// entries.length = 10;
+// console.log(entries.length);     //  10
+//console.log(entries);             // ['a', 'b', 'c', empty × 7]
+
+// Task 16
+// const priority = [1, 2, 3];
+// const priority100 = Array.from(
+// 	priority,
+// 	function(p) {
+// 		return p*10 + this.adjustment;
+// 	},                                    // это функция сопоставления
+// 	{ adjustment: 100 }                   // context for function
+// );
+// console.log(priority100);              Result:  [110, 120, 130]
+
+// Task 17
+// const ratings = [1, 2, 3, 4, 5];
+// const result = ratings.reduce((start, next, index, array) =>
+// 	start * next );
+// console.log(result);                        //120
