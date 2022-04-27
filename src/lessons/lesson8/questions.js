@@ -248,3 +248,44 @@ console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'));  
 // const result = ratings.reduce((start, next, index, array) =>
 // 	start * next );
 // console.log(result);                        //120
+
+// Task 18
+// const priority = [,,];
+// for (const item of priority) {
+// 	console.log(item);
+// }                                  //undefined    undefined
+
+
+// Task 19
+// const entries = ['a', 'b', 'c'];
+// const newEntries =
+// 	entries.concat(['d', 'e', 'f'], 'g', 'h');
+// console.log(newEntries.length);                  //8
+
+// Task 20
+// const priority = ['Low', 'Normal', 'High'];
+// // … - rest operator
+// const [low, ...remaining] = priority;
+// console.log(remaining);                           //['Normal', 'High']
+
+// Task 21
+// let task = { isDone: false };
+// console.log( Object.prototype.isPrototypeOf(task) );   // true
+
+// Task 22
+// let task1 = { id: 1 };
+// let task2 = { id: 2, priority: 100 };
+// let target = {};
+// Object.assign(target, task1, task2);
+// console.log(target);                              //{ id: 2, priority: 100 }
+
+// Task 23
+// 'use strict';        -строгий режим
+// let task = { id: 1 };
+// Object.freeze(task);
+// task.id = 2;
+// task.action = 'Create';
+// Object.defineProperty(task, 'priority', {value: 'High'})
+// console.log(task);
+//строгий режим: ошибка на 286 строке
+// нестрогий режим: ошибка на 288 строке, так как используется системный метод
