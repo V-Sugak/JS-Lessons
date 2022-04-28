@@ -289,3 +289,54 @@ console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'));  
 // console.log(task);
 //строгий режим: ошибка на 286 строке
 // нестрогий режим: ошибка на 288 строке, так как используется системный метод
+
+
+// Task 24
+// let task = {
+// 	isDone: true,
+// 	estHours: 16
+// };
+// let anotherTask = task;
+// console.log(anotherTask.isDone);            //true
+
+// Task 25
+// class Task {
+// 	constructor() {
+// 		console.log(new.target.name);         // UrgentTask
+// 	}
+// }
+// class UrgentTask extends Task {
+// }
+// let task = new UrgentTask();
+
+
+// Task 26
+// class Task {
+// 	constructor(id = 2) {
+// 		console.log('Constructing Task');
+// 		this.taskId = id;
+// 	}
+// 	showId() {
+// 		console.log(this.taskId);
+// 	}
+// }
+// let task = new Task();
+// task.showId();
+//В консоле:        //Constructing Task         // 2
+
+
+// Task 27
+// class Task {
+// 	constructor() {
+// 		console.log('Constructing Task');
+// 	}
+// }
+// class UrgentTask extends Task {
+// 	constructor() {
+// 		this.action = 'Urgent  Task'
+// 		super();                           //ошибка - расширяемый класс не умеет создавать this
+// 		console.log(this.action);
+// 	}
+// }
+// let task = new UrgentTask();
+
