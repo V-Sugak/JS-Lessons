@@ -340,3 +340,54 @@ console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'));  
 // }
 // let task = new UrgentTask();
 
+// Task 28
+// let Task = function(action) {
+// 	this.action = action;
+// 	this.done = false;
+// 	this.complete = function() {
+// 		this.done = true;
+// 	}
+// };
+// let task1 = new Task('create');
+// let task2 = new Task('delete');
+// console.log(task1.complete === task2.complete);           //false
+
+
+// Task 29
+// let task1 = { action: 'Create…' };
+// let task2 = { action: 'Delete…' };
+// let project = new Map();
+// project.set(task1, 'High Priority');
+// project.set(task2, 'Normal Priority');
+// project.clear();
+// console.log(project.size);                  //0
+
+
+// Task 30
+// let sum = function() {
+// 	let x = 0;
+// 	[...arguments].forEach( (arg) => {
+// 		x += arg;
+// 	});
+// 	return x;
+// }
+// console.log( sum(1, 2, 3) );              //6
+
+
+
+// Task 31
+// let squareFunc = function square(x, y) {
+// 	console.log(x * y);
+// };
+// square(2, 3);                                                   //   ошибка
+// square указатель для рекурсивного вызова, переменная не создается
+
+
+
+// Task 32
+// function square(x, y) {
+// 	console.log( x * y );
+// }
+// let v = square(2, 3);
+// console.log(v);
+//В консоле     //  6          //undefined
