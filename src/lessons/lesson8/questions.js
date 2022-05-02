@@ -391,3 +391,67 @@ console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'));  
 // let v = square(2, 3);
 // console.log(v);
 //В консоле     //  6          //undefined
+
+
+// Task 33
+// let person = {
+// 	firstName: 'Anna',
+// lastName: 'Vasilieva',
+// };
+// function showFullName() {
+// 	console.log(`${this.firstName}
+// ${this.lastName}`);
+// }
+// showFullName.call(person);          // Anna Vasilieva
+
+// Task 34
+// uniqueInteger.count = 0;
+// function uniqueInteger() {
+// 	return uniqueInteger.count++;
+// }
+// console.log( uniqueInteger() );  //0
+// console.log( uniqueInteger() );  //1
+
+
+// Task 35
+// var callback = function(x) { console.log(x); };
+// var callAClosure = function(closure) {
+// 	closure(10);
+// };
+// callAClosure(callback);                    //console: 10
+
+// Task 36
+// var x = 10;
+// var capturedClosure = function() {
+// 	console.log(x);
+// };
+// (function() {
+// 	x = x * x;
+// })();
+// capturedClosure();                       //console: 100
+
+
+// Task 37
+// (function() {
+// 'use strict';
+// 	document.addEventListener('click', () => console.log(this) );
+// })();                                             // this указывает на  undefined
+
+// Task 38
+// let getTaskId = () => {
+// 	id: return 1
+// };
+// console.log(getTaskId());             // 1
+
+// Task 39
+// let task = {
+// 	id: 123,
+// 	done: function() {
+// 		return () => console.log(this.id);
+// 	}
+// };
+// let anotherTask = {
+// 	id: 987
+// };
+// task.done().bind( anotherTask )();         //123       стрелка не привязывает объект  bind
+
